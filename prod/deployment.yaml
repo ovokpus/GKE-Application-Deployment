@@ -15,5 +15,6 @@ spec:
       containers:
       - name: production-container
         image: us-central1-docker.pkg.dev/qwiklabs-gcp-00-040b8fe58e61/my-repository/hello-cloudbuild:v1.0
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
